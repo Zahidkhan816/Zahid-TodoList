@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* Inputs-table */
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* logo */
+
+.logo{
+  height: 4rem;
+}
+/* form css */
+.Moon{
+  display: block;
+  float: right;
+}
+.Heading{
+    font-size: 40px;
+    font-weight: bolder;
+    background: -webkit-linear-gradient(#dba92b, #ebd73a);
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Inputs-table{
+  margin: 0 auto;
+  width: 20rem;
+  height: auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+.inputs{
+ width: 17rem;
+ color: rgb(10, 106, 208);
+ font-weight: bolder;
+ font-size: medium;
+}
+.SubmitBtn{
+  background-color: rgb(70, 205, 207);
+  border-radius:10px;
+  font:bold;
+  color: black;
+}
+.Deletebtn{
+  color: rgb(221, 48, 48);
+  border: none;
+  font-size: 1.2rem;
+  background:none;
+}
+.Editbtn{
+  color: rgb(47, 145, 42);
+  border: none;
+  font-size: 1.2rem;
+  background:none;
+}
+/* table css */
+.table-container{
+  margin-top: 2rem;
+  border: 2px solid black;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+table, td, th {
+  border: 1px solid black;
+}
+
+
+thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    font-size: 14px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

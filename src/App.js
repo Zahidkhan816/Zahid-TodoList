@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import TodoList from './Components/TodoList';
+import Completed from './Components/Completed'
+import UnCompleted from './Components/UnCompleted';
+import Rejected from './Components/Rejected'
+import { Routes, Route } from 'react-router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<TodoList/>}/>
+      <Route path='Home' element={<TodoList/>}/>
+      <Route path='Completed' element={<Completed/>}/>
+      <Route path='UnCompleted' element={<UnCompleted/>}/>
+      <Route path='Rejected' element={<Rejected/>}/>
+    </Routes>
     </div>
   );
 }
