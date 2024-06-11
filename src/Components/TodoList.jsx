@@ -11,14 +11,12 @@ const TodoList = () => {
         backgroundColor: "",
         Textcolor: "",
         headingcolor: ""
-
-
     });
     const [getList, setGetList] = useState([])
     const [data, setData] = useState(
         {
             userid: "",
-            name:"",
+            name: "",
             task: "",
             date: "",
             status: "uncompleted"
@@ -31,8 +29,11 @@ const TodoList = () => {
             status: ""
         }
     )
+    console.log(currentDate, "current date")
+
     const Datasubmit = () => {
-        if (data.task == "" || data.date == "") {
+        
+        if (data.task == "" || data.date == "" ) {
             toast("Please fill all fields")
         }
         else {
